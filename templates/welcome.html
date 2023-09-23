@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | The Allen Group</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.css.map') }}"
+    />
+  </head>
+  <style>
+    html {
+        scroll-behavior: smooth;
+    }
+  </style>
+  <body class="bg-dark">
+    {% include 'nav.html' %}
+    <div class="text-center border-primary">
+      <img
+        id="banner"
+        src="static/img/download.png"
+        alt="The Allen Group Logo"
+        class="img-fluid rounded-5 mt-2 p-3"
+      />
+    </div>
+    <div class="container rounded-2">
+      <h1 class="text-center text-light border-bottom border-light">
+        Welcome to The Allen Group
+      </h1>
+    </div>
+
+    <div class="container">
+      <div class="container text-start mx-auto mt-4">
+        <h1 class="text-light text-start rounded-4 px-auto">Who are we?</h1>
+      </div>
+      <p class="lead text-light mx-auto mt-3">
+        We are an independent group of corporations, aimed at reducing the
+        world's dependence on fossil fuels. Over the years, We have slowly been
+        converting various Mega companies to use less mining intensive materials
+        in their production. An example of one of our successes is the Apple
+        Company. In 2023, We assisted them by brainstorming new ideas for
+        production materials, Like their all- new
+        <a alt="check out the Series-9 here" href="#"
+          >Apple watch Series-9&#174;</a
+        >, which features a refined design and a 100% recycled aluminum frame.
+        The use of recycled materials enabled them to acheive their first 100%
+        carbon-neutral device, ahead of their total carbon-neutral goal by 2030.
+      </p>
+      <div class="container mb-4">
+        <h1 class="text-light text-end">What Do We Do?</h1>
+      </div>
+      <p class="lead text-light mx-auto mt-3">
+        The Allen Group is an energy corporation that is committed to reducing
+        the impact of the manufacturing process on the environment. The company
+        offers a variety of services to help businesses improve their energy
+        efficiency and reduce their carbon footprint. One of the Allen Group's
+        most popular services is its energy audit program.<br> During an energy
+        audit, a team of experts will assess a business's energy usage and
+        identify areas where savings can be made. The Allen Group can also help
+        businesses implement energy-saving measures, such as installing new
+        lighting or insulation. In addition to its energy audit program, the
+        Allen Group also offers a variety of other services to help businesses
+        reduce their environmental impact. These services include: Renewable
+        energy consulting: The Allen Group can help businesses develop and
+        implement plans to use renewable energy sources, such as solar and wind
+        power. Carbon offset programs: The Allen Group can help businesses
+        offset their carbon emissions by investing in projects that reduce
+        greenhouse gases. Green building consulting: The Allen Group can help
+        businesses design and build green buildings that are more
+        energy-efficient and environmentally friendly.<br>   The Allen Group is
+        committed to helping businesses reduce their environmental impact. The
+        company's services are helping businesses save money and protect the
+        planet. Here are some of the Allen Group's recent successes: Helped a
+        manufacturing plant reduce its energy consumption by 20%. Advised a
+        company on how to offset its carbon emissions by 100%. Designed a green
+        building that is expected to save its owner $1 million in energy costs
+        over its lifetime. The Allen Group is a leader in the field of
+        sustainable manufacturing. The company's services are helping businesses
+        reduce their environmental impact and save money. If you are a business
+        that is looking to improve its environmental performance, the Allen
+        Group is a great resource. Contact the Allen Group today to learn more
+        about how they can help you reduce your environmental impact..
+      </p>
+    </div>
+    {% include 'footer.html' %}
+  </body>
+</html>

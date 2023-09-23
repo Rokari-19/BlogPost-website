@@ -1,0 +1,170 @@
+.body {
+    background-color: rgb(33, 37, 41);
+    display: grid;
+    place-items: center;
+}
+
+.parent {
+    margin-top: 55px;
+    background-color: gray;
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    place-items: center;   
+}
+
+.child {
+    background-color: rgb(33, 37, 41);
+    height: 390px;
+    width: 390px;
+    /* margin: 0% 10px; */
+    border-radius: 10px;
+    transition:  1s ease-in-out;
+}
+
+.formedit {
+    margin-top: 165px;
+    display: flex;
+    align-content: stretch;
+    place-items: center;
+}
+
+.formedit-signin {
+    margin-top: 105px;
+    display: flex;
+    align-content: stretch;
+    place-items: center;
+}
+
+.text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: color 1s;
+    color: antiquewhite;
+    }
+
+.parent:hover .child {
+    background-color: rgba(167, 164, 170, 0.589);
+    /* transform: translateX(100%); */
+    }
+
+.parent:hover .e1 {
+    color: black;
+}
+
+.parent:hover .e1Entry {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.parent:hover .e1Pass {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+
+.header-extra {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+    padding-left: 50px;
+    margin-bottom: auto;
+}
+
+.e1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: antiquewhite;
+    margin-right: 10px;
+    transition: color 1s;
+    margin-left: 10px;
+}
+
+
+.input-group-addon {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+    background: white;
+    border: 1px none #ccc;
+    border-radius: 100px;
+    padding: 9px 10px;
+    transition: background-color 1s, color 1s;
+}
+
+.btn-smb {
+    border: none #ccc;
+    border-radius: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.parent:hover .btn-smb {
+    background-color: black;
+    color: white;
+}
+
+.parent:hover .input-group-addon {
+    background-color: black;
+    color: white;
+}
+
+.e1Entry {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex: 1 0 auto;
+    color: black;
+    border-color: antiquewhite;
+    border-radius: 80px;
+    border-style: hidden;
+    padding: 10px 10px 10px 10px;
+    transition: color 1s ease-in-out, background-color 1s;
+    
+}
+
+.e1Pass {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    flex: 1 0 auto;
+    color: black;
+    border-color: antiquewhite;
+    border-radius: 80px;
+    border-style: hidden;
+    padding: 10px 10px 10px 10px;
+    transition: color 1s ease-in-out, background-color 1s;
+}
+.alternate {
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.parent:hover .signinbtn {
+    background-color: black;
+    color: white;
+}
+
+.signinbtn {
+    border: none #ccc;
+    border-radius: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 1s, color 1s;
+}
+
+.parent:hover .header2 {
+    /* background-color: black; */
+    color: black;
+}
+
+.header2 {
+    font-size: x-large;
+    color: antiquewhite;
+    transition: color 1s ease-in-out;
+}
