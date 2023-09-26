@@ -1,0 +1,23 @@
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/style.css') }}"
+/>
+<div class="empty"></div>
+<div class="post-container">
+  <div >
+    <h3 class="header"></h3>
+    <!-- <p class="posttemplate">
+        {% for item in data %} {{ item['content'] }} {% endfor %}
+    </p> -->
+    <div class="form-floating">
+      <textarea
+        class="form-control text-dark"
+        placeholder="Leave a comment here"
+        id="floatingTextarea2"
+        style="height: 200px"
+      ></textarea>
+      <label for="floatingTextarea2">Write Post Here</label>
+    </div>
+  </div>
+<div class="empty"></div>
+</div>

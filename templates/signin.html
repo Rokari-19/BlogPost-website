@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App | Sign In</title>
+    <title>Web | Sign In</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body class="body">
     <div class="parent">
         <div class="child">
             <div class="header-extra">
-                Sign in to BlogPost
+                Sign in to TechTalk.ng
             </div>
             <div class="formedit-signin">
-                <form action="{{ url_for('welcome') }}">
+                <form id="signin" action="{{ url_for('welcome') }}" method="">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
                         <span class="input-group-addon" id="basic-addon1">@</span>
-                        <input placeholder="Enter Username" class="e1Entry" type="email">
+                        <input placeholder="Enter Username" name="username" class="e1Entry" type="email">
                     </div>
                     </br>
                     <div class="pass-entry">
                         <label for="password" class="e1">Password:</label>
-                        <input placeholder="Pick a Good Password" class="e1Pass" type="password">
-                        <button id="smb" type="submit" class="btn-smb">Go</button>
+                        <input placeholder="Pick a Good Password" name="password" class="e1Pass" type="password">
+                        <button id="smb" type="submit" onclick="collectFormData()" class="btn-smb">Go</button>
+                    </div>
+                    <div class="alternate">
+                        <h3 class="header2"></h3>
+                        <br>
+                        <a href="{{ url_for('signup') }}"><input class="signinbtn" type="button" value="Go Back"></a>
                     </div>
 
                     <script>
-                        document.getElementById('smb')
-                        
+                        function collectFormData(form) {
+                            const formData = document.getElementById('signin')
+                            let username = formData.value
+
+
+                            // Get the username and password elements.
+                            const usernameElement = form.querySelector('input[name="username"]');
+                            const passwordElement = form.querySelector('input[name="password"]');
+
+                            // Add the username and password values to the formData object.
+                            formData.username = usernameElement.value;
+                            formData.password = passwordElement.value;
+
+                            return formData;
+                        }
+
                     </script>
                 </form>
             </div>
         </div>
     </div>
 </body>
+
 </html>
