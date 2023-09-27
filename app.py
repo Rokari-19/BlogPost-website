@@ -45,9 +45,9 @@ POSTS = [
 def home():
     return render_template('signup.html')
 
-@app.route('/welcome')
+@app.route('/write')
 def welcome():
-    return render_template('welcome.html', data=POSTS)
+    return render_template('write.html', data=POSTS)
 
 @app.route('/signin')
 def signin():
