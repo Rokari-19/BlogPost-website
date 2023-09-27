@@ -15,7 +15,7 @@
                 Sign in to TechTalk.ng
             </div>
             <div class="formedit-signin">
-                <form id="signin" action="{{ url_for('welcome') }}" method="">
+                <form id="signin" action="{{ url_for('welcome') }}" class="js-form">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
                         <span class="input-group-addon" id="basic-addon1">@</span>
@@ -32,29 +32,12 @@
                         <br>
                         <a href="{{ url_for('signup') }}"><input class="signinbtn" type="button" value="Go Back"></a>
                     </div>
-
-                    <script>
-                        function collectFormData(form) {
-                            const formData = document.getElementById('signin')
-                            let username = formData.value
-
-
-                            // Get the username and password elements.
-                            const usernameElement = form.querySelector('input[name="username"]');
-                            const passwordElement = form.querySelector('input[name="password"]');
-
-                            // Add the username and password values to the formData object.
-                            formData.username = usernameElement.value;
-                            formData.password = passwordElement.value;
-
-                            return formData;
-                        }
-
-                    </script>
                 </form>
             </div>
         </div>
     </div>
+<script src="{{ url_for('static', filename='js/functions.js') }}"></script>
+
 </body>
 
 </html>

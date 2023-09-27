@@ -13,7 +13,7 @@
                 Sign Up for TechTalk.ng
             </div>
             <div class="formedit">
-                <form action="{{ url_for('welcome') }}">
+                <form action="{{ url_for('welcome') }}" id="form-control" class="js-form">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
                         <span class="input-group-addon" id="basic-addon1">@</span>
@@ -25,11 +25,7 @@
                         <input placeholder="Pick a Good Password" class="e1Pass" type="password">
                         <button id="smb" type="submit" class="btn-smb">Go</button>
                     </div>
-
-                    <script>
-                        document.getElementById('smb')
-                        
-                    </script>
+                    <script src="{{ url_for('static', filename='js/functions.js') }}"></script>
                 </form>
             </div>
             <div class="alternate">
