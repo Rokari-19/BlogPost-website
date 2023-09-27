@@ -183,3 +183,7 @@
     font-size: medium;
     cursor: text;
 }
+
+#navbar {
+    opacity: 91%;
+}

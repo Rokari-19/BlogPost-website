@@ -1,46 +1,26 @@
-<!-- <nav class="navbar shadow-sm fixed-top bg-primary mb-3">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img
-        src="static/img/download.png"
-        alt="Logo"
-        width="30"
-        height="24"
-        class="d-inline-block align-text-top rounded-2"
-      />
-    </a>
-    <h4 class="text-center">
-      TechTalk.ng
-    </h4>
-  </div>
-</nav>
-<div style="height: 44px;">
-
-</div> -->
-
-<nav class="navbar navbar-dark bg-dark fixed-top border-bottom border-light" aria-label="First navbar example">
+<nav id="navbar" class="navbar navbar-dark bg-dark fixed-top border-bottom border-light" aria-label="First navbar example">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">TechTalk.ng</a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="navbar-collapse collapse" id="navbarsExample01" style="">
+    <div class="navbar-collapse collapse bg-dark" id="navbarsExample01" style="border-radius: 20px; margin-top: 15px;">
       <ul class="navbar-nav me-auto mb-2">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{{ url_for('signup') }}">Home</a>
         </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+        <li class="nav-item dropdown ">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">See More</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Find Users</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
