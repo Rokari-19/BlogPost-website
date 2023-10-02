@@ -1,15 +1,24 @@
 .body {
     /* background-color: rgb(33, 37, 41); */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pic1.png');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pic21.jpeg');
     display: grid;
     place-items: center;
 }
 
+@media screen and (max-max-width: 390px) {
+  
+    .parent,
+    .child,
+    .body {
+        max-width: 40%;
+    }
+}
+
 .parent {
     margin-top: 55px;
-    /* background-color: rgb(214, 186, 115); */
+    /* background-color: ; */
     height: 400px;
-    width: 400px;
+    max-width: 400px;
     border-radius: 10px;
     padding: 10px 10px 10px 5px;
     display: grid;
@@ -21,24 +30,27 @@
     background-color: rgb(33, 37, 41);
     opacity: 80%;
     height: 390px;
-    width: 390px;
+    max-width: 390px;
     /* margin: 0% 10px; */
     border-radius: 10px;
     transition:  1s ease-in-out;
+    display: grid;
+    place-items: center;
+    padding: 10px 10px 10px 10px;
 }
 
 .formedit {
     margin-top: 100px;
-    display: flex;
-    align-content: stretch;
+    /* display: grid;
+    /* align-content: stretch; */
     place-items: center;
 }
 
 .formedit-signin {
     margin-top: 100px;
-    display: flex;
-    align-content: stretch;
-    place-items: center;
+    /* display: grid;
+    /* align-content: stretch; */
+    /* place-items: center; */ 
 }
 
 .text{
@@ -67,11 +79,11 @@
 }
 
 .header {
-    margin-top: 5px;
-    margin-bottom: none;
+    margin-top: 20px;
     color: antiquewhite;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
+    padding: 5px 10px 5px 10px;
     display: grid;
     place-items: center;
 }
@@ -81,8 +93,9 @@
     margin-bottom: 5px;
     color: antiquewhite;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: xx-large;
-    padding-left: 35px;
+    font-size: x-large;
+    /* padding-left: 35px; */
+    padding: 5px 10px 5px 10px;
     margin-bottom: auto;
 }
 
@@ -104,12 +117,19 @@
     transition: background-color 1s, color 1s;
 }
 
+.btn-center{
+    display: grid;
+    place-content: center;
+}
+
 .btn-smb {
+    margin-top: 20px;
     border: none #ccc;
     border-radius: 100px;
-    padding: 10px 10px;
+    padding: 10px 25px 10px 25px;
     cursor: pointer;
     transition: background-color 1s, color 1s;
+    
 }
 
 .parent:hover .btn-smb {
@@ -124,11 +144,12 @@
 
 .e1Entry {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    flex: 1 0 auto;
-    color: black;
+    grid: 1 0 auto;
+    /* color: black; */
     border-color: antiquewhite;
     border-radius: 80px;
     border-style: hidden;
+    margin-left: auto;
     padding: 10px 10px 10px 10px;
     transition: color 1s ease-in-out, background-color 1s;
     
@@ -136,8 +157,8 @@
 
 .e1Pass {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    flex: 1 0 auto;
-    color: black;
+    grid: 1 0 auto;
+    /* color: black; */
     border-color: antiquewhite;
     border-radius: 80px;
     border-style: hidden;
@@ -184,6 +205,21 @@
     cursor: text;
 }
 
+.post-button {
+    border: none #ccc;
+    border-radius: 100px;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: grid;
+    justify-content: right;
+}
+
 #navbar {
-    opacity: 91%;
+    opacity: 81%;
+    background-color: rgb(53, 65, 97);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content {
+    color: antiquewhite;
 }

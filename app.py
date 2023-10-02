@@ -57,6 +57,22 @@ def signin():
 def signup():
     return render_template('signup.html')
 
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/details')
+def post_details():
+    return render_template('post-details.html')
+
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
 @app.route('/data')
 def get_post():
     return jsonify(POSTS)

@@ -18,26 +18,28 @@
                 <form id="signin" action="{{ url_for('welcome') }}" class="js-form">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
-                        <span class="input-group-addon" id="basic-addon1">@</span>
+                        <!-- <span class="input-group-addon" id="basic-addon1">@</span> -->
                         <input placeholder="Enter Username" name="username" class="e1Entry" type="email">
                     </div>
                     </br>
                     <div class="pass-entry">
                         <label for="password" class="e1">Password:</label>
                         <input placeholder="Pick a Good Password" name="password" class="e1Pass" type="password">
-                        <button id="smb" type="submit" onclick="collectFormData()" class="btn-smb">Go</button>
-                    </div>
-                    <div class="alternate">
-                        <h3 class="header2"></h3>
                         <br>
-                        <a href="{{ url_for('signup') }}"><input class="signinbtn" type="button" value="Go Back"></a>
+                        <div class="btn-center">
+                            <button id="smb" type="submit" onclick="collectFormData()" class="btn-smb">Sign In</button>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 <script src="{{ url_for('static', filename='js/functions.js') }}"></script>
-
+<div class="alternate">
+    <h3 class="header2">You New Here?</h3>
+    <br>
+    <a href="{{ url_for('signup') }}"><input class="signinbtn" type="button" value="Sign Up"></a>
+</div>
 </body>
 
 </html>

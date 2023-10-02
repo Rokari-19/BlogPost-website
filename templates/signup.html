@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web | Sign Up</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> -->
 </head>
+
 <body class="body">
     <div class="parent">
         <div class="child">
@@ -16,24 +19,26 @@
                 <form action="{{ url_for('welcome') }}" id="form-control" class="js-form">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
-                        <span class="input-group-addon" id="basic-addon1">@</span>
-                        <input placeholder="Enter Username" class="e1Entry" type="email">
+                        <!-- <span class="input-group-addon" id="basic-addon1">@</span> -->
+                        <input placeholder="Enter Your Email" class="e1Entry" type="email">
                     </div>
                     </br>
                     <div class="pass-entry">
                         <label for="password" class="e1">Password:</label>
                         <input placeholder="Pick a Good Password" class="e1Pass" type="password">
-                        <button id="smb" type="submit" class="btn-smb">Go</button>
+                        <div class="btn-center"><button id="smb" type="submit" class="btn-smb">Go</button></div>
+
                     </div>
                     <script src="{{ url_for('static', filename='js/functions.js') }}"></script>
                 </form>
             </div>
-            <div class="alternate">
-                <h3 class="header2">OR</h3>
-                <br>
-                <a href="{{ url_for('signin') }}"><input class="signinbtn" type="button" value="Sign In"></a>
-            </div>
         </div>
     </div>
+    <div class="alternate">
+        <h3 class="header2">Have An Account Already?</h3>
+        <br>
+        <a href="{{ url_for('signin') }}"><input class="signinbtn" type="button" value="Sign In"></a>
+    </div>
 </body>
+
 </html>
