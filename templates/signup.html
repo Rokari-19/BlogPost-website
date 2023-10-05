@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web | Sign Up</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-stand-blog.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.css') }}">
 </head>
 
 <body class="body">
@@ -19,13 +22,13 @@
                 <form action="{{ url_for('welcome') }}" id="form-control" class="js-form">
                     <div class="email-entry">
                         <label class="e1" for="email">Username:</label>
-                        <!-- <span class="input-group-addon" id="basic-addon1">@</span> -->
+                        <!-- <span class="input-group-addon" id="basic-addon1">@</span> --><br>
                         <input placeholder="Enter Your Email" class="e1Entry" type="email">
                     </div>
                     </br>
                     <div class="pass-entry">
-                        <label for="password" class="e1">Password:</label>
-                        <input placeholder="Pick a Good Password" class="e1Pass" type="password">
+                        <label for="password" class="e1">Password:</label><br>
+                        <input placeholder="Enter Password" class="e1Pass" type="password">
                         <div class="btn-center"><button id="smb" type="submit" class="btn-smb">Go</button></div>
 
                     </div>
@@ -39,6 +42,28 @@
         <br>
         <a href="{{ url_for('signin') }}"><input class="signinbtn" type="button" value="Sign In"></a>
     </div>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="social-icons">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <!-- <li><a href="#">Behance</a></li> -->
+                <li><a href="#">Linkedin</a></li>
+                <!-- <li><a href="#">Dribbble</a></li> -->
+              </ul>
+            </div>
+            <div class="col-lg-12">
+              <div class="copyright-text">
+                <p>Copyright 2023, <a href="">Rokari Builds</a>, TechTalk inc &#174;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
 </body>
 
 </html>
