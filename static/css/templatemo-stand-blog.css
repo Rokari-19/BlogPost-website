@@ -416,13 +416,23 @@ header .navbar {
 .blog-posts .blog-thumb img {
 	width: 100%;
 	overflow: hidden;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 7px;
+}
+
+h4{
+	color: #eee;
 }
 
 .blog-posts .down-content {
 	padding: 40px;
+	/* margin-top: 20px; */
+	/* border-top: 1px solid #eee; */
 	border-right: 1px solid #eee;
 	border-left: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 20px;
 }
 
 .blog-posts .down-content span {
@@ -438,8 +448,12 @@ header .navbar {
 	text-transform: capitalize;
 	letter-spacing: 0.5px;
 	font-weight: 900;
-	color: #20232e;
+	color: #eee;
 	margin: 10px 0px 12px 0px;
+}
+
+.blog-posts .down-content p {
+	color: #eee;
 }
 
 .blog-posts .down-content ul.post-info li {

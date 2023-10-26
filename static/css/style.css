@@ -1,5 +1,5 @@
 .body {
-    /* background-color: rgb(33, 37, 41); */
+    background-color: rgb(154, 131, 110);
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('./pic21.jpeg');
     display: grid;
     place-items: center;
@@ -43,7 +43,7 @@
     /* margin-top: 100px; */
     /* display: grid;
     /* align-content: stretch; */
-    padding: 10px 10px ;
+    padding: 50px 50px ;
     place-items: center;
 }
 
@@ -208,6 +208,7 @@
     cursor: pointer;
     display: grid;
     justify-content: right;
+    text-decoration: none;
 }
 
 #navbar {

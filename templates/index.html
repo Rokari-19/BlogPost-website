@@ -44,28 +44,25 @@ https://templatemo.com/tm-551-stand-blog
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>TechTalk<em>.</em>Ng</h2></a>
+          <a class="navbar-brand" href="{{ url_for('index') }}"><h2>TechTalk<em>.</em>Ng</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home
+                <a class="nav-link" href="{{ url_for('index') }}">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link" href="{{ url_for('blog') }}">Topics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog Entries</a>
+                <a class="nav-link" href="{{ url_for('post_details') }}">Post Details</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="post-details.html">Post Details</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="{{ url_for('welcome') }}">Create A post</a>
               </li>
             </ul>
           </div>
@@ -79,13 +76,13 @@ https://templatemo.com/tm-551-stand-blog
       <div class="container-fluid">
         <div class="owl-banner owl-carousel">
           <div class="item">
-            <img src="assets/images/banner-item-01.jpg" alt="">
+            <img src="static/images/banner-item-01.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Fashion</span>
                 </div>
-                <a href="post-details.html"><h4>Morbi dapibus condimentum</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Morbi dapibus condimentum</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 12, 2020</a></li>
@@ -95,13 +92,13 @@ https://templatemo.com/tm-551-stand-blog
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/banner-item-02.jpg" alt="">
+            <img src="static/images/banner-item-02.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Nature</span>
                 </div>
-                <a href="post-details.html"><h4>Donec porttitor augue at velit</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Donec porttitor augue at velit</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 14, 2020</a></li>
@@ -111,13 +108,13 @@ https://templatemo.com/tm-551-stand-blog
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/banner-item-03.jpg" alt="">
+            <img src="static/images/banner-item-03.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Lifestyle</span>
                 </div>
-                <a href="post-details.html"><h4>Best HTML Templates on TemplateMo</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Best HTML Templates on TemplateMo</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 16, 2020</a></li>
@@ -127,13 +124,13 @@ https://templatemo.com/tm-551-stand-blog
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/banner-item-04.jpg" alt="">
+            <img src="static/images/banner-item-04.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Fashion</span>
                 </div>
-                <a href="post-details.html"><h4>Responsive and Mobile Ready Layouts</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Responsive and Mobile Ready Layouts</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 18, 2020</a></li>
@@ -143,13 +140,13 @@ https://templatemo.com/tm-551-stand-blog
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/banner-item-05.jpg" alt="">
+            <img src="static/images/banner-item-05.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Nature</span>
                 </div>
-                <a href="post-details.html"><h4>Cras congue sed augue id ullamcorper</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Cras congue sed augue id ullamcorper</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 24, 2020</a></li>
@@ -159,13 +156,13 @@ https://templatemo.com/tm-551-stand-blog
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/banner-item-06.jpg" alt="">
+            <img src="static/images/banner-item-06.jpg" alt="">
             <div class="item-content">
               <div class="main-content">
                 <div class="meta-category">
                   <span>Lifestyle</span>
                 </div>
-                <a href="post-details.html"><h4>Suspendisse nec aliquet ligula</h4></a>
+                <a href="{{ url_for('post_details') }}"><h4>Suspendisse nec aliquet ligula</h4></a>
                 <ul class="post-info">
                   <li><a href="#">Admin</a></li>
                   <li><a href="#">May 26, 2020</a></li>
@@ -179,43 +176,21 @@ https://templatemo.com/tm-551-stand-blog
     </div>
     <!-- Banner Ends Here -->
 
-    <section class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="main-content">
-              <div class="row">
-                <div class="col-lg-8">
-                  <span>Stand Blog HTML5 Template</span>
-                  <h4>Creative HTML Template For Bloggers!</h4>
-                </div>
-                <div class="col-lg-4">
-                  <div class="main-button">
-                    <a rel="nofollow" href="https://templatemo.com/tm-551-stand-blog" target="_parent">Download Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
     <section class="blog-posts">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            <div class="all-blog-posts">
+           <div class="col-lg-8">
+            {% include 'content-layout.html' %}
+        <!-- <div class="all-blog-posts">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/blog-post-01.jpg" alt="">
+                      <img src="static/images/blog-post-01.jpg" alt="">
                     </div>
                     <div class="down-content">
                       <span>Lifestyle</span>
-                      <a href="post-details.html"><h4>Best Template Website for HTML CSS</h4></a>
+                      <a href="{{ url_for('post_details') }}"><h4>Best Template Website for HTML CSS</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">May 31, 2020</a></li>
@@ -246,11 +221,11 @@ https://templatemo.com/tm-551-stand-blog
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/blog-post-02.jpg" alt="">
+                      <img src="static/images/blog-post-02.jpg" alt="">
                     </div>
                     <div class="down-content">
                       <span>Healthy</span>
-                      <a href="post-details.html"><h4>Etiam id diam vitae lorem dictum</h4></a>
+                      <a href="{{ url_for('post_details') }}"><h4>Etiam id diam vitae lorem dictum</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">May 24, 2020</a></li>
@@ -281,11 +256,11 @@ https://templatemo.com/tm-551-stand-blog
                 <div class="col-lg-12">
                   <div class="blog-post">
                     <div class="blog-thumb">
-                      <img src="assets/images/blog-post-03.jpg" alt="">
+                      <img src="static/images/blog-post-03.jpg" alt="">
                     </div>
                     <div class="down-content">
                       <span>Fashion</span>
-                      <a href="post-details.html"><h4>Donec tincidunt leo nec magna</h4></a>
+                      <a href="{{ url_for('post_details') }}"><h4>Donec tincidunt leo nec magna</h4></a>
                       <ul class="post-info">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">May 14, 2020</a></li>
@@ -315,12 +290,12 @@ https://templatemo.com/tm-551-stand-blog
                 </div>
                 <div class="col-lg-12">
                   <div class="main-button">
-                    <a href="blog.html">View All Posts</a>
+                    <a href="{{ url_for('blog') }}">View All Posts</a>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> -->
+          </div> 
           <div class="col-lg-4">
             <div class="sidebar">
               <div class="row">
@@ -338,15 +313,15 @@ https://templatemo.com/tm-551-stand-blog
                     </div>
                     <div class="content">
                       <ul>
-                        <li><a href="post-details.html">
+                        <li><a href="{{ url_for('post_details') }}">
                           <h5>Vestibulum id turpis porttitor sapien facilisis scelerisque</h5>
                           <span>May 31, 2020</span>
                         </a></li>
-                        <li><a href="post-details.html">
+                        <li><a href="{{ url_for('post_details') }}">
                           <h5>Suspendisse et metus nec libero ultrices varius eget in risus</h5>
                           <span>May 28, 2020</span>
                         </a></li>
-                        <li><a href="post-details.html">
+                        <li><a href="{{ url_for('post_details') }}">
                           <h5>Swag hella echo park leggings, shaman cornhole ethical coloring</h5>
                           <span>May 14, 2020</span>
                         </a></li>
@@ -404,16 +379,14 @@ https://templatemo.com/tm-551-stand-blog
             <ul class="social-icons">
               <li><a href="#">Facebook</a></li>
               <li><a href="#">Twitter</a></li>
-              <li><a href="#">Behance</a></li>
+              <!-- <li><a href="#">Behance</a></li> -->
               <li><a href="#">Linkedin</a></li>
-              <li><a href="#">Dribbble</a></li>
+              <!-- <li><a href="#">Dribbble</a></li> -->
             </ul>
           </div>
           <div class="col-lg-12">
             <div class="copyright-text">
-              <p>Copyright 2020 Stand Blog Co.
-                    
-                 | Design: <a rel="nofollow" href="https://templatemo.com" target="_parent">TemplateMo</a></p>
+              <p>Copyright 2023, <a href="">Rokari Builds</a>, TechTalk inc &#174;</p>
             </div>
           </div>
         </div>

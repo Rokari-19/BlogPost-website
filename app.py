@@ -59,7 +59,7 @@ def signup():
 
 @app.route('/index')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', data = POSTS)
 
 @app.route('/about')
 def about():
@@ -67,11 +67,11 @@ def about():
 
 @app.route('/details')
 def post_details():
-    return render_template('post-details.html')
+    return render_template('post-details.html', data=POSTS)
 
 @app.route('/blog')
 def blog():
-    return render_template('blog.html')
+    return render_template('blog.html', data=POSTS)
 
 @app.route('/data')
 def get_post():
