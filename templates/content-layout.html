@@ -1,24 +1,31 @@
-<!-- <div class="row"> -->
-  <div class="col-lg-6">
-    <div class="blog-post">
-      <div class="blog-thumb">
-        <img src="static/images/blog-thumb-01.jpg" alt="" />
-      </div>
-      <div class="down-content">
-        <span>Lifestyle</span>
-        <a href="{{ url_for('post_details') }}"><h4>Donec tincidunt leo</h4></a>
-        <ul class="post-info">
-          <li><a href="#">Admin</a></li>
-          <li><a href="#">May 31, 2020</a></li>
-          <li><a href="#">12 Comments</a></li>
-        </ul>
-        
-        <p>{{ data[1].items() }}</p>
-        <div class="post-options">
-          <div class="row">
-            <div class="col-lg-12"></div>
+{% for items in data %}
+    <div class="all-blog-posts">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="blog-post">
+            <div class="blog-thumb">
+              <img src="static/images/blog-thumb-01.jpg" alt="" />
+            </div>
+            <div class="down-content">
+              <span>{{ items['class'] }}</span>
+              <a href="{{ url_for('post_details') }}"><h4>{{items['header']}}</h4></a>
+              <ul class="post-info">
+                <li><a href="#">Admin</a></li>
+                <li><a href="#">May 31, 2020</a></li>
+                <li><a href="#">12 Comments</a></li>
+              </ul>
+              
+              <p>
+                {{items['content']}}
+              </p>
+              <div class="post-options">
+                <div class="row">
+                  <div class="col-lg-12"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  <!-- </div> -->
+{% endfor %}

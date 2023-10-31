@@ -9,37 +9,95 @@ POSTS = [
         'id':'1',
         'class':'food',
         'content':'lorem ipsum',
-        'header':'lorem ipsuck my titties'
+        'header':'food1'
     },
 
     {
         'id':'2',
         'class':'food',
         'content':'lorem ipsum',
-        'header':'lorem ipsuck my titties'
+        'header':'food2'
     },
 
     {
         'id':'3',
         'class':'food',
         'content':'lorem ipsum',
-        'header':'lorem ipsuck my titties'
+        'header':'food3'
     },
 
     {
         'id':'4',
         'class':'food',
         'content':'lorem ipsum',
-        'header':'lorem ipsuck my titties'
+        'header':'food4'
     },
 
     {
         'id':'5',
         'class':'food',
         'content':'lorem ipsum',
-        'header':'lorem ipsuck my titties'
+        'header':'food5'
     }
 ]
+
+JOBS = [
+    {
+        'id':1, 
+        'title':'Backend developer',
+        'location':'Abuja, Nigeria',
+        # 'Wages/Hour':'negotiable',
+        'member': 'Ajiri "rokari" iyelobu',
+        'github': 'https://github.com/rokarioss'
+    }, 
+    # {
+    #     'id':2, 
+    #     'title':'Data Scientist',
+    #     'location':'Abuja, Nigeria',
+    #     # 'Wages/Hour':'negotiable',
+    #     'member': 'anosike ugochukwu'
+    # },
+    {
+        'id':3, 
+        'title':'Front End Engineer',
+        'location':'Uke, Nigeria',
+        # 'Wages/Hour':'negotiable',
+        'member': 'Daniel "kng-koder" fori',
+        'github': 'https://github.com/DFori'
+
+    },
+    {
+        'id':4, 
+        'title':'Fullstack Developer',
+        'location':'remote',
+        # 'Wages/Hour':'negotiable',
+        'member': 'Aigbona Benjamin "bencool"',
+        'github':'https://github.com/aigbonabenjamin'
+    }
+    
+]
+
+SERV = [
+    {
+        'id':1,
+        'title':'Website development',
+        'price':'Negotiable',
+        'duration':'Depending on customer terms'
+    },
+    {
+        'id':2,
+        'title':'Back-end data-base management',
+        'price':'Negotiable',
+        'duration':'Depending on payment'
+    },
+    {
+        'id':3,
+        'title':'Cyber Security & IT-support services',
+        'price':'Negotiable',
+        'duration':'Depends on price'
+    }
+]
+
 
 @app.route('/')
 def home():
