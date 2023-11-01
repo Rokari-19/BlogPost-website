@@ -1,5 +1,6 @@
 from flask import Flask, render_template, url_for, request, jsonify
-
+from flask_login import LoginManager
+from flask_sqlalchemy import SQLAlchemy 
 app = Flask(__name__)
 
 
@@ -101,15 +102,15 @@ SERV = [
 
 @app.route('/')
 def home():
-    return render_template('signup.html')
+    return render_template('signin.html')
 
 @app.route('/write')
 def welcome():
     return render_template('write.html', data=POSTS)
 
-@app.route('/signin')
-def signin():
-    return render_template('signin.html')
+# @app.route('/signin')
+# def signin():
+#     return render_template('signin.html')
 
 @app.route('/signup')
 def signup():
